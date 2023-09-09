@@ -239,10 +239,19 @@ class _ProfilePageState extends State<ProfilePage> {
                         color: Color(0xff0E8388),
                       ),
                       const SizedBox(width: 20),
-                      Text(
-                        "Keluar",
-                        style: GoogleFonts.poppins(
-                            color: Colors.black, fontSize: 14),
+                      InkWell(
+                        child: Container(
+                          width: 200,
+                          child: Text(
+                            "Keluar",
+                            style: GoogleFonts.poppins(
+                                color: Colors.black, fontSize: 14),
+                          ),
+                        ),
+                        onTap: () {
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/signIn-page', (route) => false);
+                        },
                       ),
                     ],
                   )
