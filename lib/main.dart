@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => const SplashPage(),
           '/main': (context) => MyHomePage(),
           '/signIn-page': (context) => LoginPage(),
+          '/add_photo': (context) => AddPhoto(),
           '/add_photo': (context) => AddPhoto()
         },
       ),
